@@ -13,7 +13,7 @@ function App() {
   return(
     <>
       <h1>Ship database</h1>
-      <button onClick={handleClick}>Get vessel data</button>
+      <button onClick={handleClick}>Get vessel profiles</button>
 
     </>
   )
