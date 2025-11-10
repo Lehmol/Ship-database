@@ -1,10 +1,10 @@
-import { getData } from './utilities/api';
+import { getVesselProfiles } from './utilities/api';
 
 function App() {
 
   const handleClick = async () => {
     try {
-      const vesselData = await getData();
+      const vesselData = await getVesselProfiles();
       console.log('Vessel data: ', vesselData);
     } catch (error) {
       console.error('Kunde inte hämta data: ', error);
