@@ -1,20 +1,10 @@
-import { getVesselProfiles } from './utilities/api';
+import SideBar from './components/SideBar/SideBar.jsx';
 
 function App() {
 
-  const handleClick = async () => {
-    try {
-      const vesselData = await getVesselProfiles();
-      console.log('Vessel data: ', vesselData);
-    } catch (error) {
-      console.error('Kunde inte hämta data: ', error);
-    }
-  }
   return(
     <>
-      <h1>Ship database</h1>
-      <button onClick={handleClick}>Get vessel profiles</button>
-
+      <SideBar />
     </>
   )
 }
